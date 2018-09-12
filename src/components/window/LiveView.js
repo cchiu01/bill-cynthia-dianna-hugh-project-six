@@ -5,7 +5,10 @@ class LiveView extends Component {
     constructor () {
         super();
         this.state = {
-            hover: false,
+            hoverGitHub: false,
+            hoverEmail: false,
+            hoverTwitter: false,
+            hoverLinkedIn: false,
             user: "",
             twitter: "diannakylee",
             userSelections: {
@@ -176,19 +179,19 @@ class LiveView extends Component {
                     <div className="social">
                         <ul style={socialContainer}>
                             {this.state.userSelections.social.linkedin  && (
-                                <li onMouseEnter={() => this.setState({ hover: true })} onMouseLeave={() => this.setState({ hover: false })} className="liveView__icon"><a href={`https://ca.linkedin.com/in/${this.state.userSelections.social.linkedin}`}><i class="fab fa-linkedin-in"  style={this.state.hover ? socialStyleHover : socialStyle}></i></a></li>
+                                <li onMouseEnter={() => this.setState({ hoverLinkedIn: true })} onMouseLeave={() => this.setState({ hoverLinkedIn: false })} className="liveView__icon"><a href={`https://ca.linkedin.com/in/${this.state.userSelections.social.linkedin}`}><i class="fab fa-linkedin-in" style={this.state.hoverLinkedIn ? socialStyleHover : socialStyle}></i></a></li>
                             )}
 
                             {this.state.userSelections.social.github  && (
-                                <li><a href={`https://github.com/${this.state.userSelections.social.github}`}><i class="fab fa-github" style={socialStyle}></i></a></li>
+                                <li onMouseEnter={() => this.setState({ hoverGitHub: true })} onMouseLeave={() => this.setState({ hoverGitHub: false })} className="liveView__icon"><a href={`https://github.com/${this.state.userSelections.social.github}`}><i class="fab fa-github" style={this.state.hoverGitHub ? socialStyleHover : socialStyle}></i></a></li>
                             )}
 
                             {this.state.userSelections.social.email && (
-                                <li><a href={`mailto:${this.state.userSelections.social.email}`}><i class="far fa-envelope" style={socialStyle}></i></a></li>
+                                <li onMouseEnter={() => this.setState({ hoverEmail: true })} onMouseLeave={() => this.setState({ hoverEmail: false })} className="liveView__icon"><a href={`mailto:${this.state.userSelections.social.email}`}><i class="far fa-envelope" style={this.state.hoverEmail ? socialStyleHover : socialStyle}></i></a></li>
                             )}
 
                             {this.state.userSelections.social.twitter && (
-                                <li><a href={`https://twitter.com/${this.state.userSelections.social.twitter}`}><i class="fab fa-twitter" style={socialStyle}></i></a></li>
+                                <li onMouseEnter={() => this.setState({ hoverTwitter: true })} onMouseLeave={() => this.setState({ hoverTwitter: false })} className="liveView__icon"><a href={`https://twitter.com/${this.state.userSelections.social.twitter}`}><i class="fab fa-twitter" style={this.state.hoverTwitter ? socialStyleHover : socialStyle}></i></a></li>
                             )}
                             
                         </ul>

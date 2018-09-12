@@ -636,6 +636,8 @@ h1.template__title {
   .view__css {
     overflow-y: scroll;
     background-color: #262721; }
+    .view__css--add {
+      color: #a9d038; }
     .view__css--element {
       color: #ee2874; }
       .view__css--element span {
@@ -653,6 +655,9 @@ h1.template__title {
       margin-left: 25px; }
     .view__css--end {
       color: white; }
+
+.view__css--element span.view__css--add {
+  color: #a9d038; }
 
 .windowChanger {
   list-style: none;

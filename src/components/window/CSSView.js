@@ -191,11 +191,25 @@ class CSSView extends Component {
                     <p className="view__css--property">{`transform : ${iconTranslate}`};</p>
                     <p className="view__css--end">{`}`}</p>
                 </div>
+                {/* li */}
+                <div className="view__container">
+
+                    <p className="view__css--element">{`li`}<span className="view__css--element--start">{`{`}</span></p>
+                    <p className="view__css--property">{`margin : 10px`};</p>
+                    <p className="view__css--end">{`}`}</p>
+                </div>
                 {/* icons */}
                 <div className="view__container">
                     
                     <p className="view__css--element">{`i`}<span className="view__css--element--start">{`{`}</span></p>
                     <p className="view__css--property">{`color : ${headerOneColor}`};</p>
+                   
+                    <p className="view__css--end">{`}`}</p>
+                </div>
+                <div className="view__container">
+                    
+                    <p className="view__css--element">{`i`}<span className="view__css--add">:hover</span><span className="view__css--element--start">{`{`}</span></p>
+                    <p className="view__css--property">{`color : ${headerTwoColor}`};</p>
                    
                     <p className="view__css--end">{`}`}</p>
                 </div>
