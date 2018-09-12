@@ -120,7 +120,7 @@ class HTMLView extends Component {
 
 
 
-                    <p className="indent-1"><span className="view__html__head--element--inline view__html__head--element--inline--start"><span className="view__html__start">{`<`}</span>title<span className="view__html__end">{`>`}</span></span> {this.state.user} <span className="view__html__head--element--inline view__html__head--element--inline--end"><span className="view__html__start">{`</`}</span>title<span className="view__html__end">{`>`}</span></span></p>
+                    <p className="indent-1"><span className="view__html__head--element--inline view__html__head--element--inline--start"><span className="view__html__start">{`<`}</span>title<span className="view__html__end">{`>`}</span></span>Your Website<span className="view__html__head--element--inline view__html__head--element--inline--end"><span className="view__html__start">{`</`}</span>title<span className="view__html__end">{`>`}</span></span></p>
                     
 
                     <p>
