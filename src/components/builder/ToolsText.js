@@ -53,7 +53,8 @@ class ToolsText extends Component {
       'Poppins',
       'Fira Sans',
       'Open Sans',
-      'Roboto'];
+      'Roboto',
+      'Dosis'];
       return fontsArray.map((font,i) => {
         let dbFont = font;
         return (<option selected={this.state[property].fontFamily === font ? true : false} value={dbFont} key={i}>{font}</option> )
