@@ -157,7 +157,7 @@ class ToolsText extends Component {
     const h2color = color.hex;
     const dbRef = firebase.database().ref(this.props.user)
     console.log(`toolstext`, h2color);
-    dbRef.child("text").child("h2color").update(color)
+    dbRef.child("text").child("h2color").update(color) 
 
   }
   handleChangeComplete = (color) => {
